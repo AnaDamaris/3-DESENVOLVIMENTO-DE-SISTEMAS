@@ -22,7 +22,6 @@ function ligaParaCliente(telefoneComercial, telefoneResidencial) {
   
   ligaParaCliente(cliente.telefone[0], cliente.telefone[1]);
 
-  //código omitido
 
 const encomenda = {
     destinatario: cliente.nome,
