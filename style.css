@@ -1,0 +1,384 @@
+/*=========================================
+CAFETERIA INCONFIDENTES
+style.css
+Autor: ChatGPT
+=========================================*/
+
+/* RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F7F1E8;
+    color:#333;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+/*=========================================
+CORES
+=========================================*/
+
+:root{
+
+--marrom:#4E342E;
+--marrom2:#6D4C41;
+--caramelo:#A97142;
+--bege:#E9D5B5;
+--creme:#F7F1E8;
+--branco:#fff;
+--cinza:#555;
+
+}
+
+/*=========================================
+HEADER
+=========================================*/
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:var(--marrom);
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 8%;
+
+z-index:999;
+
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+
+}
+
+.logo h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:34px;
+
+color:white;
+
+}
+
+.logo span{
+
+color:#E9D5B5;
+
+}
+
+nav ul{
+
+display:flex;
+
+gap:35px;
+
+align-items:center;
+
+}
+
+nav a{
+
+color:white;
+
+font-size:18px;
+
+transition:.3s;
+
+font-weight:500;
+
+}
+
+nav a:hover{
+
+color:#E9D5B5;
+
+}
+
+.btn{
+
+padding:10px 22px;
+
+background:#A97142;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#E9D5B5;
+
+color:#4E342E;
+
+}
+
+/*=========================================
+BANNER
+=========================================*/
+
+.banner{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+
+url("../imagens/banner.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.banner h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:70px;
+
+color:white;
+
+margin-bottom:20px;
+
+}
+
+.banner p{
+
+color:white;
+
+font-size:24px;
+
+margin-bottom:35px;
+
+max-width:700px;
+
+}
+
+.botao{
+
+display:inline-block;
+
+background:#A97142;
+
+padding:16px 40px;
+
+color:white;
+
+border-radius:40px;
+
+font-size:20px;
+
+transition:.4s;
+
+}
+
+.botao:hover{
+
+background:#E9D5B5;
+
+color:#4E342E;
+
+transform:translateY(-5px);
+
+}
+
+/*=========================================
+SEÇÃO MAIS VENDIDOS
+=========================================*/
+
+.mais-vendidos{
+
+padding:100px 8%;
+
+background:#F7F1E8;
+
+}
+
+.mais-vendidos h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:45px;
+
+text-align:center;
+
+margin-bottom:60px;
+
+color:#4E342E;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:35px;
+
+}
+
+.card{
+
+background:white;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+height:250px;
+
+object-fit:cover;
+
+}
+
+.card h3{
+
+font-size:24px;
+
+padding:18px;
+
+color:#4E342E;
+
+}
+
+.card p{
+
+padding:0 18px 25px;
+
+font-size:20px;
+
+font-weight:bold;
+
+color:#A97142;
+
+}
+
+/*=========================================
+SOBRE HOME
+=========================================*/
+
+.sobre-home{
+
+padding:100px 8%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:#E9D5B5;
+
+}
+
+.conteudo{
+
+max-width:900px;
+
+text-align:center;
+
+}
+
+.conteudo h2{
+
+font-size:46px;
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:25px;
+
+color:#4E342E;
+
+}
+
+.conteudo p{
+
+font-size:20px;
+
+line-height:1.8;
+
+margin-bottom:30px;
+
+}
+
+.conteudo a{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#4E342E;
+
+color:white;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.conteudo a:hover{
+
+background:#A97142;
+
+}
