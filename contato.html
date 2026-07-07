@@ -1,122 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Cafeteria Inconfidentes</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contato</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
 
-    <div class="logo">
-        <h1>CAFETERIA <span>INCONFIDENTES</span></h1>
-    </div>
+<h2>☕ Inconfidentes Cafeteria</h2>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="cadastro.html" class="btn">Cadastro</a></li>
-        </ul>
-    </nav>
+<nav>
+
+<a href="index.html">Home</a>
+<a href="quem-somos.html">Quem Somos</a>
+<a href="cardapio.html">Cardápio</a>
+<a href="conta.html">Minha Conta</a>
+<a href="carrinho.html">Carrinho</a>
+
+</nav>
 
 </header>
 
-<!-- TÍTULO -->
-<section class="titulo-pagina">
-    <h1>Contato</h1>
-    <p>Fale com a Cafeteria Inconfidentes</p>
-</section>
+<section class="destaques">
 
-<!-- CONTATO -->
-<section class="contato">
+<h2>Fale Conosco</h2>
 
-    <div class="info">
+<input id="nome" placeholder="Seu nome">
 
-        <h2>Informações</h2>
+<br><br>
 
-        <p>📍 Rua das Cafeterias, 123 - Centro</p>
-        <p>📞 (35) 99999-0000</p>
-        <p>📱 WhatsApp: (35) 99999-0000</p>
-        <p>✉ contato@inconfidentes.com</p>
+<input id="email" placeholder="Seu email">
 
-        <h2>Horário de Funcionamento</h2>
+<br><br>
 
-        <p>Segunda a Sexta: 08h às 19h</p>
-        <p>Sábado: 08h às 15h</p>
-        <p>Domingo: Fechado</p>
+<textarea
+id="mensagem"
+placeholder="Digite sua mensagem"
+rows="6"
+style="width:350px;padding:10px;"></textarea>
 
-        <h2>Redes Sociais</h2>
+<br><br>
 
-        <p>Instagram: @inconfidentes</p>
-        <p>Facebook: /inconfidentes</p>
-
-    </div>
-
-    <div>
-
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..." 
-            loading="lazy">
-        </iframe>
-
-    </div>
+<button onclick="enviar()">Enviar</button>
 
 </section>
 
-<!-- FORMULÁRIO DE CONTATO -->
-<section>
-
-    <form>
-
-        <h2>Envie uma mensagem</h2>
-
-        <div class="campo">
-            <label>Nome</label>
-            <input type="text" id="nome">
-        </div>
-
-        <div class="campo">
-            <label>E-mail</label>
-            <input type="email" id="email">
-        </div>
-
-        <div class="campo">
-            <label>Telefone</label>
-            <input type="text" id="telefone">
-        </div>
-
-        <div class="campo">
-            <label>Mensagem</label>
-            <input type="text" id="mensagem">
-        </div>
-
-        <button type="submit">Enviar</button>
-
-    </form>
-
-</section>
-
-<!-- FOOTER -->
 <footer>
 
-    <h3>Cafeteria Inconfidentes</h3>
-    <p>O verdadeiro sabor de Minas</p>
-    <p>(35) 99999-0000</p>
-    <p>Seg - Sex: 08h às 19h</p>
+<p>© 2026 Inconfidentes Cafeteria</p>
 
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+
+function enviar(){
+
+let nome=document.getElementById("nome").value;
+
+alert("Obrigado, "+nome+"! Sua mensagem foi enviada.");
+
+}
+
+</script>
 
 </body>
 </html>

@@ -1,226 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cafeteria Inconfidentes</title>
+    <title>Inconfidentes Cafeteria</title>
 
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;600&display=swap"
-        rel="stylesheet">
-
 </head>
-
 <body>
 
-    <header>
+<header>
 
-        <div class="logo">
+    <div class="logo">
+        <h2>☕ Inconfidentes Cafeteria</h2>
+    </div>
 
-            <img src="https://cdn-icons-png.flaticon.com/512/2935/2935307.png">
+    <nav>
 
-            <h1>INCONFIDENTES</h1>
+        <a href="index.html">Home</a>
+        <a href="quemsomos.html">Quem Somos</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="contato.html">Contato</a>
+        <a href="conta.html">Minha Conta</a>
+        <a href="carrinho.html">Carrinho</a>
 
-        </div>
+    </nav>
 
-        <nav>
+</header>
 
-            <a href="#home">Home</a>
-            <a href="#sobre">Quem Somos</a>
-            <a href="#cardapio">Cardápio</a>
-            <a href="#contato">Contato</a>
+<section class="banner">
 
-        </nav>
+    <h1>Bem-vindo à Inconfidentes Cafeteria</h1>
 
-    </header>
+    <p>O melhor café da cidade.</p>
 
-    <section id="home" class="banner">
+    <button onclick="verCardapio()">Ver Cardápio</button>
 
-        <div class="banner-text">
+</section>
 
-            <h2>O lugar perfeito para café e pão de queijo.</h2>
+<section class="destaques">
 
-            <p>
-                Mais que uma cafeteria.
-                Uma experiência mineira.
-            </p>
+<h2>Mais Vendidos</h2>
 
-            <a href="#cardapio">
-                <button>Ver Cardápio</button>
-            </a>
+<div class="cards">
 
-        </div>
+    <div class="card">
 
-    </section>
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400" alt="Café">
 
-    <section id="maisvendidos">
+        <h3>Cappuccino</h3>
 
-        <h2>Mais Vendidos</h2>
+        <p>R$ 12,00</p>
 
-        <div class="cards">
+        <button onclick="adicionarCarrinho('Cappuccino',12)">
+            Adicionar
+        </button>
 
-            <div class="card">
+    </div>
 
-                <img src="https://images.pexels.com/photos/6605214/pexels-photo-6605214.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="Pão de queijo">
+    <div class="card">
 
-                <h3>Pão de Queijo</h3>
+        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=400" alt="Pão de queijo">
 
-                <p>R$ 3,00</p>
+        <h3>Pão de Queijo</h3>
 
-            </div>
+        <p>R$ 5,00</p>
 
-            <div class="card">
+        <button onclick="adicionarCarrinho('Pão de Queijo',5)">
+            Adicionar
+        </button>
 
-                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085">
+    </div>
 
-                <h3>Cappuccino Cremoso</h3>
+    <div class="card">
 
-                <p>R$13,00</p>
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400" alt="Cookie">
 
-            </div>
+        <h3>Cookie</h3>
 
-            <div class="card">
+        <p>R$ 8,00</p>
 
-                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+        <button onclick="adicionarCarrinho('Cookie',8)">
+            Adicionar
+        </button>
 
-                <h3>Café Tradicional</h3>
+    </div>
 
-                <p>R$8,00</p>
+</div>
 
-            </div>
+</section>
 
-            <div class="card">
+<footer>
 
-                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+<p>© 2026 Inconfidentes Cafeteria</p>
 
-                <h3>Pão recheado</h3>
+</footer>
 
-                <p>R$4,00</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section id="sobre">
-
-        <div class="sobre-img">
-
-            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0">
-
-        </div>
-
-        <div class="sobre-text">
-
-            <h2>Quem Somos</h2>
-
-            <p>
-
-                Na Inconfidentes acreditamos que um bom café e um pão de queijo quentinho têm o poder de tornar qualquer
-                momento especial.
-
-                Nossa cafeteria une tradição mineira, ingredientes selecionados e atendimento acolhedor para
-                proporcionar uma experiência única.
-
-            </p>
-
-        </div>
-
-    </section>
-
-    <section id="cardapio">
-
-        <h2>Nosso Cardápio</h2>
-
-        <div class="menu">
-
-            <div>
-
-                <h3>Cafés</h3>
-
-                <p>Espresso ........ R$8</p>
-
-                <p>Cappuccino ........ R$13</p>
-
-                <p>Café com Leite ........ R$10</p>
-
-                <p>Mocha ........ R$14</p>
-
-            </div>
-
-            <div>
-
-                <h3>Pães de Queijo</h3>
-
-                <p>Tradicional ........ R$3</p>
-
-                <p>Recheado ........ R$4</p>
-
-                <p>Doce de Leite ........ R$6</p>
-
-                <p>Queijo Minas ........ R$5</p>
-
-            </div>
-
-        </div>
-
-        <button id="pedido">Faça seu pedido</button>
-
-    </section>
-
-    <section id="contato">
-
-        <h2>Fale Conosco</h2>
-
-        <div class="contato">
-
-            <div>
-
-                <h3>Contato</h3>
-
-                <p>📞 (45)99999-9999</p>
-
-                <p>✉ contato@inconfidentes.com</p>
-
-                <p>📍 Rua das Acácias,245</p>
-
-            </div>
-
-            <div>
-
-                <h3>Horários</h3>
-
-                <p>Seg-Sex</p>
-
-                <p>07:00 às 18:00</p>
-
-                <p>Sábado</p>
-
-                <p>07:00 às 11:00</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <footer>
-
-        <p>
-            © 2025 Cafeteria Inconfidentes
-        </p>
-
-    </footer>
-
-    <script src="script.js"></script>
+<script src="app.js"></script>
+<script src="carrinho.js"></script>
 
 </body>
-
 </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carrinho</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h2>☕ Inconfidentes Cafeteria</h2>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="cardapio.html">Cardápio</a>
+<a href="conta.html">Minha Conta</a>
+
+</nav>
+
+</header>
+
+<section class="destaques">
+
+<h2>Meu Carrinho</h2>
+
+<ul
+id="listaCarrinho"
+style="font-size:20px;line-height:40px;">
+</ul>
+
+<h2 id="total"></h2>
+
+<br>
+
+<button onclick="finalizar()">
+
+Finalizar Pedido
+
+</button>
+
+</section>
+
+<script src="carrinho.js"></script>
+
+<script>
+
+function finalizar(){
+
+let carrinho=JSON.parse(localStorage.getItem("carrinho"))||[];
+
+if(carrinho.length==0){
+
+alert("Seu carrinho está vazio.");
+
+return;
+
+}
+
+alert("Pedido realizado com sucesso!");
+
+localStorage.removeItem("carrinho");
+
+location.reload();
+
+}
+
+</script>
+
+</body>
+
+</html>

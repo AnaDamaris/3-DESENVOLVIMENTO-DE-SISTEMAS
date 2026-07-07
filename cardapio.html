@@ -1,153 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardápio - Cafeteria Inconfidentes</title>
 
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cardápio</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
 
-    <div class="logo">
-        <h1>CAFETERIA <span>INCONFIDENTES</span></h1>
-    </div>
+<h2>☕ Inconfidentes Cafeteria</h2>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="cardapio.html">Cardápio</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="cadastro.html" class="btn">Cadastro</a></li>
-        </ul>
-    </nav>
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="quem-somos.html">Quem Somos</a>
+
+<a href="contato.html">Contato</a>
+
+<a href="conta.html">Minha Conta</a>
+
+<a href="carrinho.html">Carrinho</a>
+
+</nav>
 
 </header>
 
-<!-- TÍTULO -->
-<section class="titulo-pagina">
-    <h1>Nosso Cardápio</h1>
-    <p>Sabores artesanais feitos com amor</p>
-</section>
+<section class="destaques">
 
-<!-- CAFÉS -->
-<section class="cardapio">
+<h2>Nosso Cardápio</h2>
 
-    <div class="categoria">
-        <h2>Cafés</h2>
-
-        <div class="lista-produtos">
-
-            <div class="produto">
-                <img src="imagens/cafe1.jpg" alt="">
-                <h3>Café Expresso</h3>
-                <p>Tradicional e forte, perfeito para começar o dia.</p>
-                <span class="preco">R$ 8,00</span>
-            </div>
-
-            <div class="produto">
-                <img src="imagens/cappuccino.jpg" alt="">
-                <h3>Cappuccino Cremoso</h3>
-                <p>Com leite vaporizado e espuma cremosa.</p>
-                <span class="preco">R$ 14,00</span>
-            </div>
-
-            <div class="produto">
-                <img src="imagens/latte.jpg" alt="">
-                <h3>Latte</h3>
-                <p>Café suave com leite quente.</p>
-                <span class="preco">R$ 13,00</span>
-            </div>
-
-        </div>
-    </div>
+<div class="cards" id="produtos"></div>
 
 </section>
 
-<!-- PÃO DE QUEIJO -->
-<section class="cardapio">
-
-    <div class="categoria">
-        <h2>Pão de Queijo</h2>
-
-        <div class="lista-produtos">
-
-            <div class="produto">
-                <img src="imagens/pao.jpg" alt="">
-                <h3>Tradicional</h3>
-                <p>Receita mineira clássica e irresistível.</p>
-                <span class="preco">R$ 9,00</span>
-            </div>
-
-            <div class="produto">
-                <img src="imagens/pao.jpg" alt="">
-                <h3>Recheado com Queijo</h3>
-                <p>Recheio cremoso de queijo minas.</p>
-                <span class="preco">R$ 11,00</span>
-            </div>
-
-            <div class="produto">
-                <img src="imagens/pao.jpg" alt="">
-                <h3>Recheado com Requeijão</h3>
-                <p>Super cremoso por dentro.</p>
-                <span class="preco">R$ 12,00</span>
-            </div>
-
-        </div>
-    </div>
-
-</section>
-
-<!-- DOCES -->
-<section class="cardapio">
-
-    <div class="categoria">
-        <h2>Doces</h2>
-
-        <div class="lista-produtos">
-
-            <div class="produto">
-                <img src="imagens/bolo.jpg" alt="">
-                <h3>Bolo Caseiro</h3>
-                <p>Feito diariamente com ingredientes frescos.</p>
-                <span class="preco">R$ 12,00</span>
-            </div>
-
-            <div class="produto">
-                <img src="imagens/brownie.jpg" alt="">
-                <h3>Brownie</h3>
-                <p>Chocolate intenso e delicioso.</p>
-                <span class="preco">R$ 10,00</span>
-            </div>
-
-        </div>
-    </div>
-
-</section>
-
-<!-- BOTÃO PEDIDO -->
-<section style="text-align:center; margin:60px 0;">
-    <a href="contato.html" class="botao">Fazer Pedido</a>
-</section>
-
-<!-- FOOTER -->
 <footer>
 
-    <h3>Cafeteria Inconfidentes</h3>
-    <p>O verdadeiro sabor de Minas</p>
-    <p>(35) 99999-0000</p>
-    <p>Seg - Sex: 08h às 19h</p>
+<p>© 2026 Inconfidentes Cafeteria</p>
 
 </footer>
 
-<script src="js/script.js"></script>
+<script src="cardapio.js"></script>
+
+<script src="carrinho.js"></script>
 
 </body>
 </html>
